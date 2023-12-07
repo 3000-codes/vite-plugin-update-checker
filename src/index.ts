@@ -39,7 +39,7 @@ const getVersion = (type: FromType, plainText?: string): string => {
     }
 };
 
-export default function versionUpdater(option: PluginOption): Plugin {
+export default function versionUpdater(option: PluginOption={}): Plugin {
   const name = option.name || "version";
   const from = option.from || "random";
   const timeCell = option.timeCell || 1000 * 60 * 60; // 1 hour

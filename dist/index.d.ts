@@ -7,6 +7,6 @@ type PluginOption = {
     timeCell?: number;
     plainText?: string;
 };
-declare function versionUpdater(option: PluginOption): Plugin;
+declare function versionUpdater(option?: PluginOption): Plugin;
 
 export { versionUpdater as default };

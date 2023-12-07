@@ -5,7 +5,7 @@
 ## Install
 
 ```bash
-npm install --save-dev git://github.com/3000-codes/vite-plugin-update-checker.git
+npm install --save-dev vite-plugin-update-checker
 ```
 
 ## Usage

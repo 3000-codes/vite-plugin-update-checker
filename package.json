@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-update-checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A vite plugin to check for  updates of published html files.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -23,12 +23,12 @@
   "author": "3000-codes",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^20.10.3",
     "tsup": "^8.0.1",
     "typescript": "^5.2.2",
     "vite": "^5.0.6"
   },
   "dependencies": {
-    "@types/node": "^20.10.3"
   },
   "repository": {
     "type": "git",

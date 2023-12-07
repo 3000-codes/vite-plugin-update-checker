@@ -64,7 +64,7 @@ export default function versionUpdater(option: PluginOption={}): Plugin {
           type: "text/javascript",
         },
         children: `
-        "use strict";(()=>{var a=/(<meta name="${name || "version"}" content=")([^"]*)(">)/,s=()=>{let e=new XMLHttpRequest;e.open("GET",location.href),e.send(),e.onload=t=>{let n=t.target.response.match(a)?.[2],o=document.querySelector('meta[name="${name || "version"}"]').content;n!==o&&location.reload()}},c=function(){setInterval(s,${timeCell})}();})();
+        "use strict";(()=>{var a=/(<meta name="${name || "version"}" content=")([^"]*)(">)/,s=()=>{let e=new XMLHttpRequest;e.open("GET",location.href),e.send(),e.onload=t=>{let n=t.target.response.match(a)?.[2],o=document.querySelector('meta[name="${name || "version"}"]').content;n!==o&&location.reload()}},c=function(){s(),setInterval(s,${timeCell})}();})();
         `,
         injectTo: "body"
       });

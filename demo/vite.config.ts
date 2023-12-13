@@ -1,6 +1,6 @@
 import { fileURLToPath, URL } from "node:url";
 import { defineConfig } from "vite";
-import versionUpdater from "../src";
+import versionUpdater from "../dist/index.js";
 export default defineConfig({
   plugins: [
     versionUpdater({
@@ -10,7 +10,7 @@ export default defineConfig({
     }),
   ],
   build: {
-    outDir: "out",
+    outDir: fileURLToPath(new URL("./dist", import.meta.url)),
     rollupOptions: {
       input: {
         main: fileURLToPath(new URL("./index.html", import.meta.url)),
